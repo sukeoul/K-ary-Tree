@@ -197,7 +197,6 @@ public class Tree<T>
      *
      * Return an ArrayList representing the tree.
      * 
-     * Note: See page 19 of Lecture 5 for information.
      * 
      * Note: This should be implemented for all values of k. For example,
      *       the children of a node at index i in a k-ary tree should
@@ -321,18 +320,11 @@ public class Tree<T>
         return this.root;
     }
 
-    /*
-    * You should NOT change anything below this line.
-    * 
-    * Pay close attention to what has been implemented already and
-    * what you need to implement on your own (in the Tree class).
-    */
     public class Node<T>
     {
         private T data;
         private Node<T> parent;
         private ArrayList<Node<T>> children;
-        //This arraylist contains the children of the node in order from left to right
 
         public Node(T data, Node<T> parent, int k)
         {
@@ -358,8 +350,6 @@ public class Tree<T>
         
         /*
          * This will append to the end of the children arraylist.
-         * You need to perform the bounds checks yourself for when
-         * the node has the maximum amount of children.
          */
         public void addChild(T data)
         {
